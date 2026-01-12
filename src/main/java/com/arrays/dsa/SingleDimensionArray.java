@@ -22,6 +22,13 @@ public class SingleDimensionArray {
 
         System.out.println("=======================================================-Array Traversal-=============================");
         sda.traverseArray();
+        System.out.println("=======================================================-Array Search-=============================");
+        sda.searchInArray(30); //True case
+        sda.searchInArray(99); //False case
+        System.out.println("=======================================================-Delete Element in Array-=============================");
+        sda.deleteValue(2);
+        var notExistLementArray = sda.arr[2]; //-------------> O(1)
+        System.out.println(notExistLementArray);
 
     }
 
@@ -56,5 +63,27 @@ public class SingleDimensionArray {
             System.out.println("Array no longer exists!"); //-------------- O(1)
         }
 
+    }
+
+    // Search for an element in the given Array
+    public void searchInArray(int valueToSearch){
+        for (int i=0; i<arr.length; i++){ //----------> O(n)
+            if(arr[i] == valueToSearch){ //----------> O(1)
+                System.out.println("The value is found at the index of "+ i); //----------> O(1)
+                return;
+            }
+        }
+            System.out.println(valueToSearch+ " The given value is not found"); //----------> O(1)
+    }
+
+    // Deleting an Element in Array
+    public void deleteValue(int valueToBeDeleteIndex) {
+        try {
+            arr[valueToBeDeleteIndex] = Integer.MIN_VALUE; //-------------> O(1)
+            System.out.println("The value has been deleted successfully"); //-------------> O(1)
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("The value that is provided is not in the range of array"); //-------------> O(1)
+        }
     }
 }
