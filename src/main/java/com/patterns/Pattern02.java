@@ -1,6 +1,11 @@
 package com.patterns;
 
 public class Pattern02 {
+           // *****
+           // *****
+           // *****
+           // *****
+           // *****
 
     public static void main(String[] args){
         Pattern02 pattern02 = new Pattern02();
