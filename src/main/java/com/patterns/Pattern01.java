@@ -1,13 +1,13 @@
 package com.patterns;
 
-public class Patter01 {
+public class Pattern01 {
     //*
     //* *
     //* * *
     //* * * *
 
     public static void main(String[] args){
-        Patter01 patter01 =new Patter01();
+        Pattern01 patter01 =new Pattern01();
         patter01.pattern01(4);
 
     }
