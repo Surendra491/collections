@@ -22,7 +22,7 @@ public class Pattern05 {
            for ( int col =0; col< Totalcol; col++){
                 System.out.print(" *");
             }
-            System.out.println(row);
+            System.out.println();
         }
     }
 }
