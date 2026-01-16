@@ -18,8 +18,7 @@ public class Pattern06 {
 
     public void pattern06(int n){
         for (int row = 1; row <= n; row++){
-            int noOfSpace = n - row;
-            for (int s =1; s<=noOfSpace;s++){
+            for (int s =1; s<=n - row;s++){
                 System.out.print(" ");
             }
             for (int col =1; col<=row; col++){

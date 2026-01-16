@@ -1,11 +1,11 @@
 package com.patterns;
 
 public class Pattern07 {
-                //  *****
-                //  ****
-                //  ***
-                //  **
-                //  *
+                     //   *****
+                     //    ****
+                     //     ***
+                     //      **
+                     //       *
     public static void main(String[] args){
         Pattern07 pattern07 = new Pattern07();
         pattern07.pattern07(5);
